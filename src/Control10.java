@@ -2,7 +2,7 @@
   * programa que pide un número por teclado y calcula si es par o impar
   */
 import java.util.*;
-public class Control1O {
+public class Control10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num;      

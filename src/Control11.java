@@ -3,7 +3,7 @@
  * suma de los números leídos
  */
 import java.util.*;
-public class Copntrol11 {
+public class Control11 {
     public static void main(String[] args) {
         int suma = 0, num;
         Scanner sc = new Scanner(System.in);
