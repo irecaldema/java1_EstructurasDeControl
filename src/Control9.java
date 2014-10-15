@@ -1,39 +1,39 @@
 /*
  * Programa que pide dos números y un operador y muestra el resultado
  */
-import java.util.*;
-import java.io.*;
-public class Control9 {
-    public static void main(String[] args) throws IOException{
-        int A,B, Resultado = 0 ;
-        char operador;
-        boolean calculado = true;
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Introduzca un numero entero:");
-        A = sc.nextInt();
-        System.out.print("Introduzca otro numero entero:");
-        B = sc.nextInt();
-        System.out.print("Introduzca un operador (+,-,*,/):");
-        operador = (char)System.in.read();
-        switch (operador) {
-                case '-' : Resultado = A - B;
-                           break;
-                case '+' : Resultado = A + B;
-                           break;
-                case '*' : Resultado = A * B;
-                           break;
-                case '/' : if(B!=0)
-                              Resultado = A / B;
-                           else{
-                              System.out.println("\nNo se puede dividir por cero");
-                              calculado = false;
+import java.util.*;//importa librerias
+import java.io.*;//importa librerias
+public class Control9 {//crea clase
+    public static void main(String[] args) throws IOException{ //inicia ejecucion *********************
+        int A,B, Resultado = 0 ;//declara e inicializa variables
+        char operador;//declara variable
+        boolean calculado = true;//declara e inicializa varible
+        Scanner sc = new Scanner(System.in);//crea objeto scanner
+        System.out.print("Introduzca un numero entero:");//muestra mensaje
+        A = sc.nextInt();//escanea entrada
+        System.out.print("Introduzca otro numero entero:");//muestra mensaje
+        B = sc.nextInt();//escanea entrada
+        System.out.print("Introduzca un operador (+,-,*,/):");//muestra mensaje
+        operador = (char)System.in.read();//escanea entrada y agarra el caracter
+        switch (operador) {//si la varioable
+                case '-' : Resultado = A - B;//es - hace una resta
+                           break;//sale
+                case '+' : Resultado = A + B;//es + hace una suma
+                           break;//sale
+                case '*' : Resultado = A * B;//es * hace una multiplicacion 
+                           break;//sale
+                case '/' : if(B!=0)//es / y la segunda variable es diferente a 0
+                              Resultado = A / B; //hace una division
+                           else{ //si no se cumple la condicion
+                              System.out.println("\nNo se puede dividir por cero");//muestra mensaje
+                              calculado = false;//guarda valor en variable
                            }
-                           break;
-                default : System.out.println("\nOperador no valido");
-                          calculado = false;
+                           break;//sale
+                default : System.out.println("\nOperador no valido");//es diferente a los otros casos muestra mensaje
+                          calculado = false;//guarda valor en variable
                          
         }
-        if(calculado){
+        if(calculado){//si la 
             System.out.println("\nEl resultado es: " + Resultado);
         }
     }
