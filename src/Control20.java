@@ -2,7 +2,9 @@
  * Programa que dibuja un rectángulo sólido de asteriscos.
  * El número de filas y columnas se pide por teclado
  */
+//importa librerias
 import java.util.*;
+//crea clase
 public class Control20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
