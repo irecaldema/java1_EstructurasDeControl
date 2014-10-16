@@ -1,8 +1,8 @@
 /*
  * programa que lee un número n y muestra n asteriscos
  */
-import java.util.*;
-public class Control12 {
+import java.util.*;//importa librerias
+public class Control12 {//
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n, contador = 0;
