@@ -2,8 +2,11 @@
  * Programa que muestra una tabla con las potencias de x (x x2 x3 x4)
  * para valores de x desde 1 hasta XMAX
  */
+//crea clase
 public class Control21 {
+    //inicia ejecucion
     public static void main(String[] args) {
+	//declara e inicializa variables
         final int XMAX = 10;
         int x, n;
         //mostrar la cabecera de la tabla
