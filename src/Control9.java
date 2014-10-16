@@ -14,15 +14,15 @@ public class Control9 {//crea clase
         System.out.print("Introduzca otro numero entero:");//muestra mensaje
         B = sc.nextInt();//escanea entrada
         System.out.print("Introduzca un operador (+,-,*,/):");//muestra mensaje
-        operador = (char)System.in.read();//escanea entrada y agarra el caracter
+        operador = (char)System.in.read();//read()  devuelve el siguinete byte de datos o -1 si es nulo y lanza una excepcion si ocurre un error, lo que lee en la entrada lo combierte en char 
         switch (operador) {//si la variable
-                case '-' : Resultado = A - B;//es - hace una resta
+                case '-' : Resultado = A - B;//es el caractere - hace una resta
                            break;//sale
-                case '+' : Resultado = A + B;//es + hace una suma
+                case '+' : Resultado = A + B;//es el caractere + hace una suma
                            break;//sale
-                case '*' : Resultado = A * B;//es * hace una multiplicacion 
+                case '*' : Resultado = A * B;//es el caractere * hace una multiplicacion 
                            break;//sale
-                case '/' : if(B!=0)//es / y la segunda variable es diferente a 0
+                case '/' : if(B!=0)//es el caractere / y la segunda variable es diferente a 0
                               Resultado = A / B; //hace una division
                            else{ //si no se cumple la condicion
                               System.out.println("\nNo se puede dividir por cero");//muestra mensaje
