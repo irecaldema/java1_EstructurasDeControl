@@ -4,7 +4,7 @@
 import java.util.*;//importa librerias
 import java.io.*;//importa librerias
 public class Control9 {//crea clase
-    public static void main(String[] args) throws IOException{ //inicia ejecucion *********************
+    public static void main(String[] args) throws IOException{ //inicia ejecucion se recogen la excepciones de entrada y salida
         int A,B, Resultado = 0 ;//declara e inicializa variables
         char operador;//declara variable
         boolean calculado = true;//declara e inicializa varible
@@ -15,7 +15,7 @@ public class Control9 {//crea clase
         B = sc.nextInt();//escanea entrada
         System.out.print("Introduzca un operador (+,-,*,/):");//muestra mensaje
         operador = (char)System.in.read();//escanea entrada y agarra el caracter
-        switch (operador) {//si la varioable
+        switch (operador) {//si la variable
                 case '-' : Resultado = A - B;//es - hace una resta
                            break;//sale
                 case '+' : Resultado = A + B;//es + hace una suma
@@ -33,8 +33,8 @@ public class Control9 {//crea clase
                           calculado = false;//guarda valor en variable
                          
         }
-        if(calculado){//si la 
-            System.out.println("\nEl resultado es: " + Resultado);
+        if(calculado){//si la variable (boolean) es true 
+            System.out.println("\nEl resultado es: " + Resultado);//muestra mensaje
         }
     }
 }
